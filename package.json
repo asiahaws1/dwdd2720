@@ -2,9 +2,19 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.12"
   },
   "dependencies": {
     "typescript": "^5.3.3"
-  }
+  },
+  "name": "intro-typescript",
+  "version": "1.0.0",
+  "description": "This is my DWDD-2720 course TypeScript project",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "Asia Haws",
+  "license": "ISC"
 }
