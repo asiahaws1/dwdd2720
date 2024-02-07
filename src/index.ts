@@ -4,21 +4,7 @@ import typescript from "highlight.js/lib/languages/typescript";
 
 hljs.registerLanguage("typescript", typescript);
 
-/* document.querySelector("#basicTypesButton").addEventListener("click", () => {
-    const basicTypes = basicTypesExample();
-    document.querySelector("#basicTypesTitle").innerHTML = basicTypes.title;
-    document.querySelector("#basicTypesExplanation").innerHTML = basicTypes.explanation;
-    document.querySelector("#basicTypesCode").innerHTML = basicTypes.code;
-    document.querySelector("#codeDiv").classList.add("mockup-code");
-})
 
-document.querySelector("#arrayTypesButton").addEventListener("click", () => {
-    const arrayTypes = arrayTypesExample();
-    document.querySelector("#basicTypesTitle").innerHTML = arrayTypes.title;
-    document.querySelector("#basicTypesExplanation").innerHTML = arrayTypes.explanation;
-    document.querySelector("#basicTypesCode").innerHTML = arrayTypes.code;
-    document.querySelector("#codeDiv").classList.add("mockup-code");
-}) */
 
 document.querySelector("#basicTypesButton").addEventListener("click", () => loadExample("basic"))
 document.querySelector("#arrayTypesButton").addEventListener("click", () => loadExample("array"))
