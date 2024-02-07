@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang = "en" data-theme="forest">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/vs2015.css" />
+    <link rel="stylesheet" href="index.css" />
     <script src="index.ts" defer type="module"></script>
     <title>Introduction to TypeScript!</title>
-</head>
-<body class="bg-blue-200 flex-col h-screen overflow-hidden">
-<header>
-    <h1 class="text-2xl bg-slate-500 m-2 p-4 text-center">Welcome to my TypeScript Site!</h1>
-</header>
-<main class="flex h-full">
-    <nav class="bg-slate-400 min-w-24 p-2">
-        <ul>
-            <li><button class="border p-1 rounded-md" id="basicTypesButton">Basic Types</button></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+  </head>
+  <body class="bg-primary flex-col h-screen overflow-hidden">
+    <header>
+      <h1 class="text-2xl bg-primary-content p-4 text-center">
+        Welcome to my TypeScript site!
+      </h1>
+    </header>
+    <main class="flex h-full">
+      <nav class="bg-primary-content min-w-40 p-2">
+        <ul class="flex flex-col">
+          <li><button class="btn btn-sm mx-2 w-32" id="basicTypesButton">Basic Types</button></li>
+          <li><button class="btn btn-sm m-2 w-32" id="arrayTypesButton">Array Types</button></li>
+          <li><button class="btn btn-sm mx-2 w-32" id="specialTypesButton">Special Types</button></li>
         </ul>
-    </nav>
-    <div>
-        <h2 class="text-2xl bg-slate-500 m-2 p-4 text-center"> This is my TypeScript site!</h2>
-        <p id="basicTypesTitle"></p>
-        <p id="basicTypesExplanation"></p>
-        <p id="basicTypesCode"></p>
-    </div>
-</main>
-<footer>
-    <p class="bg-slate-400 fixed bottom-0 w-full p-2 text-center">&copy; 2024 Asia Haws</p> 
-</footer>
-</body>
+      </nav>
+      <div class="p-2">
+        <h3 id="cardTitle"></h3>
+        <p id="cardExplanation"></p>
+        <div id="codeDiv" class="bg-primary-content rounded-lg">
+          <pre>
+            <code id="cardCode" class="text-wrap"></code>
+          </pre>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="bg-primary-content fixed bottom-0 w-full p-2 text-center">
+        &copy; 2024 Asia Haws 
+      </p>
+    </footer>
+  </body>
 </html>
