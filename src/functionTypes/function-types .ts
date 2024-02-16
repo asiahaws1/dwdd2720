@@ -20,9 +20,9 @@ console.log(addArrow(5, 7))
 
 function greetUser(name: string, age?: number): string {
     if (age) {
-        return `Hello ${name}, you are ${age} years old.`
+        return `Hi there ${name}, you are ${age} years old.`
     } else {
-        return `Hello ${name}`
+        return `Hi there ${name}`
     }
 }
 
