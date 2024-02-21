@@ -12,7 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        // nested: resolve(root, 'nested/index.html'),
+        functionTypes: resolve(root, 'functionTypes', 'index.html'),
       },
     },
   },
