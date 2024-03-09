@@ -28,17 +28,6 @@ function callBackFunction(entries: IntersectionObserverEntry[]) {
     })
 }
 
-// Abstraction
-
-/*
-Abstract Class: The Shape class is declared as abstract. This means it serves as a blueprint for other classes, but cannot be instantiated itself. It abstracts the concept of a "shape" in general, without specifying the details of any specific shape.
-
-Abstract Methods: The getArea and getPerimeter methods are declared as abstract. This means that any class extending Shape must provide an implementation for these methods. The details of how to calculate the area and perimeter are abstracted away from the Shape class and left to the specific shape classes to define.
-
-Encapsulation: The color property is protected, meaning it can only be accessed within the Shape class and its subclasses. This hides the internal state of the Shape objects, providing a level of abstraction.
-
-Method: The getColor method provides a way to access the color property from outside the class, without directly accessing the property itself. This is another form of abstraction, as the internal implementation could change without affecting code that uses this method.
-*/
 
 abstract class Shape {
 
@@ -54,29 +43,19 @@ abstract class Shape {
     
 }
 
-//const myshape = new Shape(); // Error: Cannot create an instance of an abstract class.
 
-// Inheritance
-/*
-Inheritance is a principle that allows one class (the child, or subclass) to have the same behaviors and attributes as another class (the parent, or superclass), with the ability to add or override them.
-
-Here, the Circle class is the subclass and Shape is the superclass. The Circle class inherits from the Shape class, meaning it has access to all public and protected members of Shape.
-
-The super(color) call in the Circle constructor is also part of inheritance. It calls the constructor of the superclass (Shape), passing in the necessary parameters. This is necessary because when a new Circle is created, we also need to initialize the Shape part of it.
-
-*/
 
 class Circle extends Shape {
-    private radius: number;  // private means that the radius property can only be accessed within the Circle class
+    private radius: number;  
 
     constructor(color: string, radius: number) {
-        super();  // calls the constructor of the superclass (Shape)
+        super();  
         this.color = color;
         this.radius = radius;
     }
 
     getArea(): number {
-        //return Math.PI * this.radius * this.radius;
+        
         return Math.PI * Math.pow(this.radius, 2);
     }
 
@@ -87,13 +66,6 @@ class Circle extends Shape {
 
 const myCircle = new Circle('blue', 10);
 
-// Polymorphism
-
-/*
-Polymorphism is an object-oriented programming concept that allows objects of different types to be treated as objects of a common type. This is typically achieved through inheritance and interfaces.
-
-Both Circle and Rectangle will have their own implementations of the getArea and getPerimeter methods, demonstrating polymorphism. This allows us to treat Circle and Rectangle objects as Shape objects, and call the getArea and getPerimeter methods on them without knowing their specific types.
-*/
 
 class Rectangle extends Shape {
     private width: number;
@@ -124,11 +96,6 @@ shapes.forEach(shape => {
     console.log('-------------------');
 })
 
-// Encapsulation
-
-/*
-Encapsulation is an object-oriented programming concept that binds together the data and functions that manipulate the data, and that keeps both safe from outside interference and misuse. The data of an object can be accessed only through the methods of that object.
-*/
 
 class Person {
     private name: string;
@@ -151,6 +118,5 @@ class Person {
 }
 
 const alice = new Person('Alice', 30, 'Engineer');
-alice.greet(); // Output: Hello, my name is Alice and I am 30 years old.
-//alice.name; // Error: Property 'name' is private and only accessible within class 'Person'.
-alice.getName(); // Output: 'Alice'
+alice.greet(); 
+alice.getName(); 
