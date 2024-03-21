@@ -15,7 +15,7 @@ const cardExplanation = document.querySelector("#cardExplanation");
 const cardCode = document.querySelector("#cardCode");
 
 function loadExample(exampleType: string) {
-    // based on the exampleType, load the appropriate example
+   
     let chosenExampleType
     switch (exampleType) {
         case "basic":
@@ -34,7 +34,7 @@ function loadExample(exampleType: string) {
     cardTitle.textContent = chosenExampleType.title;
     cardExplanation.textContent = chosenExampleType.explanation;
     cardCode.innerHTML = hljs.highlight(chosenExampleType.code, { language: "typescript" }).value;
-    //document.querySelector("#codeDiv").classList.add("mockup-code");
+    
 }
 
 loadExample("basic")
