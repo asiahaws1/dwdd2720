@@ -22,5 +22,5 @@ export default defineConfig({
   server: {
     port: 2720,
   },
-  assetsInclude: ['images'], 
 })
+
