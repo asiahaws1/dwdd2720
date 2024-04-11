@@ -69,11 +69,11 @@ const people = [
 const totalAge = getTotalAge(people)
 console.log(totalAge)
 
-/* ------------------------------------------------------------- */
+/* -------------------------- the cards ----------------------------------- */
 
 const detailView = document.querySelector('#detail-view')
 const detailViewExample = document.createElement('div')
-detailViewExample.classList.add('w-full', 'p-4')
+detailViewExample.classList.add('w-full', 'p-4', 'mx-4', 'bg-[#333333DD] ')
 detailView.appendChild(detailViewExample)
 
 const exampleOne = new ExampleCodeSnippet(
