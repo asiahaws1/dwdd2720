@@ -73,6 +73,7 @@ console.log(totalAge)
 
 const detailView = document.querySelector('#detail-view')
 const detailViewExample = document.createElement('div')
+detailViewExample.classList.add('w-full', 'p-4')
 detailView.appendChild(detailViewExample)
 
 const exampleOne = new ExampleCodeSnippet(
