@@ -16,6 +16,7 @@ export default defineConfig({
         interfaces: resolve(root, 'interfaces', 'index.html'),
         classes: resolve(root, 'classes', 'index.html'),
         generics: resolve(root, 'generics', 'index.html'),
+        basicTypes: resolve(root, 'basicTypes', 'index.html'),
       },
     },
   },
@@ -23,4 +24,3 @@ export default defineConfig({
     port: 2720,
   },
 })
-
