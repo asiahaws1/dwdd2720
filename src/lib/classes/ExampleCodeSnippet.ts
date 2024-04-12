@@ -11,7 +11,7 @@ export class ExampleCodeSnippet implements ExampleCode {
     public code: string
   ) {}
   renderCodeSnippet(): string {
-    return `<h3 class="font-bold text-black bg-slate-400 rounded p-1 my-4 text-center">
+    return `<h3 class="font-bold text-white bg-pink-400 rounded p-1 my-4 text-center">
     ${this.title}
     </h3>
     <p class="text-white mb-1">${this.explanation}</p>

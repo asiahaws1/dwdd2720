@@ -118,7 +118,7 @@ function renderExample(example: ExampleCodeSnippet) {
   const exampleElement = document.createElement('div')
   exampleElement.classList.add(
     'text-[.5rem]',
-    'bg-slate-900',
+    'bg-green-900',
     'p-1',
     'm-[2px]',
     'rounded',
