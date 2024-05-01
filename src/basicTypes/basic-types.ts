@@ -19,12 +19,12 @@ export function basicTypesExample() {
   // isDone is a variable annotated with the boolean data type and assigned the value false.
   
   // number
-      let myNumber: number = 42;
-  // myNumber is a variable annotated with the number data type and assigned the value 42.
+      let myNumber: number = 31;
+  // myNumber is a variable annotated with the number data type and assigned the value 21.
   
   // string
-      let myName: string = "Thor";
-  // myName is a variable annotated with the string data type and assigned the value "Thor".
+      let myName: string = "Asia";
+  // myName is a variable annotated with the string data type and assigned the value "Asia".
   `,
     }
   }
